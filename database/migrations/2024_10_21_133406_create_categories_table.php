@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->text('description')->nullable();
-            $table->timestamps();
+            $table->timestamps(); //este crea el created at y el updated at timestamp
         });
     }
 
